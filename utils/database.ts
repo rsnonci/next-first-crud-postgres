@@ -3,11 +3,11 @@ import {Pool} from 'pg';
 let conn: any;
 
 if (!conn) {
-    new Pool({
+    conn = new Pool({
         user: 'postgres',
         password: 'password',
         host: 'localhost',
-        port: 54,
+        port: 5432,
         database: 'tasksdb'
     })
 };
